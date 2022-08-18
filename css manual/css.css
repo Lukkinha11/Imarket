@@ -1,0 +1,33 @@
+#telalogin{
+    width: 350px; /*largura*/
+    position: absolute; /*posição absoluta em relação a tela*/ 
+    top: 50%; /*desloque do topo 50% para baixo*/
+    left: 50%; /*desloque 50% da esquerda para a direita em relação a tela */
+    transform: translate(-50%, -50%); /*centraliza*/
+    box-shadow: 1px 5px 30px rgb(195, 195, 195); /*propriedade para colocar sombra*/
+    opacity: 0.90;
+
+}
+
+#fundo{
+    background-image: url(../img/fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*div#teste{
+    display: inline-block;
+    margin-left: 100px;
+    left: 50%;
+
+}*/
+
+#teste{
+    float: left;
+    float: right;
+    margin-left: 50px;
+   
+
+}
+

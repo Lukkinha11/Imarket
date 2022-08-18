@@ -1,0 +1,51 @@
+.wrapper{
+     /*Vou usar 100% da altura disponivel da minha área de vizualização da página */
+    min-height: 100vh;
+}
+
+.body{
+    min-width: 372px;
+}
+
+@media screen and (max-width: 469px) {
+    .mt-xs-3 {
+        margin-top: 1rem;
+    
+    }
+}
+
+label:hover .text-dark{
+    /*Estou afetando seletores da classe text-dark dentro de labels que estejam
+    em estados hover, ou seja, com o ponteiro do mouse sobre eles */
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+label .text-dark{
+    transition: color 0.2s ease;
+}
+
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark{
+     /*Estou atingindo elementos da classe text-dark que estejam dentro de um elemento
+     da classe btn-outline-danger, que por sua vez é vizinho de um elemento da classe
+     btn-check, que esteja no estado: checado, ativo ou hover.   */
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+.flex-even{
+    /*Faz com que os elementos ocupem a região horizontal disponível */
+    flex: 1;
+    min-width: 300px;
+}
+
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color:orange ;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }

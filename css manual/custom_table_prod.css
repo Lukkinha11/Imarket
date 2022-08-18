@@ -1,0 +1,28 @@
+/* Estilização da tabela */
+table {
+    border-collapse: collapse;
+    border: 1px solid #555;
+  }
+  
+  table th,
+  table td{
+    border: 1px solid #888;
+    text-align: center;
+  }
+  
+  /* Limita o tamanho da tabela para ter scroll */
+  .wrapper {
+    width: 300px;
+    overflow-x: auto;
+  }
+  
+  
+  /*
+  Gira a <div> e a <table> em 180°
+  ou seja, a div gira 180° e a
+  a table gira 360°
+  */
+  .wrapper,
+  .content {
+    transform: rotate(180deg);
+  }
